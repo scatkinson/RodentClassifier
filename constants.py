@@ -6,7 +6,8 @@ LOCAL_PATH_COL = "local_path"
 CREATED_UTC_COL = "created_utc"
 ID_COL = "id"
 URL_COL = "url"
-IMAGE_EXISTS_COL = "image_exists"
+ARRAY_COL = "ndarray"
+LABEL_COL = "label"
 IMAGE_REGISTRY_COLS = [FULL_LINK_COL, IMAGE_LINK_COL,  ID_COL, LOCAL_PATH_COL, CREATED_UTC_COL]
 PUSHSHIFT_SEARCH_URL = 'https://api.pushshift.io/reddit/search/submission/'
 PUSHSHIFT_SIZE = 100
@@ -18,3 +19,6 @@ HEADERS = {
             'Access-Control-Max-Age': '3600',
             'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0'
         }
+IMAGE_REGISTRY_EXT = "image_registry/image_registry.csv"
+IMPORT_DF_COLS = [ID_COL, LOCAL_PATH_COL, ARRAY_COL, LABEL_COL]
+ANGLE_LIST = [0, 72, 144, 216, 288]
